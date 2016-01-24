@@ -1,0 +1,24 @@
+{
+  "name": "ss-apidocs",
+  "version": "0.1.0",
+  "description": "StoryShop API Docs",
+  "main": "ss-apidocs.js",
+  "scripts": {
+    "swaggy": "swagdoc -i ss-apidocs.js -o docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:StrangeWind/ss-api-swag.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "5.5.4",
+    "mongoose": "4.3.6",
+    "swagdoc": "0.0.13"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-es2015-modules-commonjs": "6.1.4",
+    "babel-preset-es2015": "6.3.13"
+  }
+}
