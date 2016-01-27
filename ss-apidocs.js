@@ -1,16 +1,16 @@
 'use strict';
 import ob from 'objob';
 import faker from 'faker';
-var mongoose = require('mongoose');
-var jwt = require('jsonwebtoken');
-var definitions = require('./_definitions.js')(ob, faker, mongoose, jwt);
-var errors = require('./_errors.js');
-var headers = require('./_headers.js')(faker, jwt);
-var users = require('./_actions-users.js')(ob, faker, mongoose, jwt, definitions, errors, headers);
-var worlds = require('./_actions-worlds.js')(ob, faker, mongoose, jwt, definitions, errors, headers);
-var characters = require('./_actions-characters.js')(ob, faker, mongoose, jwt, definitions, errors, headers);
-var elements = require('./_actions-elements.js')(ob, faker, mongoose, jwt, definitions, errors, headers);
-var beats = require('./_actions-beats.js')(ob, faker, mongoose, jwt, definitions, errors, headers);
+let mongoose = require('mongoose');
+let jwt = require('jsonwebtoken');
+let definitions = require('./_definitions.js')(ob, faker, mongoose, jwt);
+let errors = require('./_errors.js');
+let headers = require('./_headers.js')(faker, jwt);
+let users = require('./_actions-users.js')(ob, faker, mongoose, jwt, definitions, errors, headers);
+let worlds = require('./_actions-worlds.js')(ob, faker, mongoose, jwt, definitions, errors, headers);
+let characters = require('./_actions-characters.js')(ob, faker, mongoose, jwt, definitions, errors, headers);
+let elements = require('./_actions-elements.js')(ob, faker, mongoose, jwt, definitions, errors, headers);
+let beats = require('./_actions-beats.js')(ob, faker, mongoose, jwt, definitions, errors, headers);
 
 module.exports = {
   name: 'StoryShop REST API',
